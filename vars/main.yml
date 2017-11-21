@@ -1,5 +1,5 @@
 ---
 apache_listen_port: 8080
-docroot: "/var/www/vhosts/"
+docroot: "/var/www/vhosts/example_com"
 apache_vhosts:
   - {servername: "10.2.78.102", documentroot: "/var/www/vhosts/example_com"}

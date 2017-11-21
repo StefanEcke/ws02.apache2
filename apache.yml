@@ -8,5 +8,11 @@
         path: "{{ docroot }}"
         state: directory
         mode: 0755
+    - copy:
+        src: files/index.html
+        dest: /var/www/vhosts/example_com
+        owner: www-data
+        group: www-data
+        mode: u+rw,g-wx,o-rwx
   roles:
     - { role: ansible-role-apache }
