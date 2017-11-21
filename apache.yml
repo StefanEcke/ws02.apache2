@@ -13,6 +13,6 @@
         dest: /var/www/vhosts/example_com
         owner: www-data
         group: www-data
-        mode: u+rw,g-wx,o-rwx
+        mode: 0644
   roles:
     - { role: ansible-role-apache }
