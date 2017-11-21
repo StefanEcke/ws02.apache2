@@ -5,8 +5,8 @@
     - vars/main.yml
   pre_tasks:
     - file:
-      path: "{{ docroot }}"
-      state: directory
-      mode: 0755
+        path: "{{ docroot }}"
+        state: directory
+        mode: 0755
   roles:
     - { role: ansible-role-apache }
