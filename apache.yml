@@ -12,7 +12,7 @@
     - name: "Webseite kopieren"
       copy:
         src: files/index.html
-        dest: {{ docroot }}
+        dest: "{{ docroot }}"
         owner: www-data
         group: www-data
         mode: 0644
