@@ -4,11 +4,13 @@
   vars_files:
     - vars/main.yml
   pre_tasks:
-    - file:
+    - name: "Verzeichnis erstellen"
+      file:
         path: "{{ docroot }}"
         state: directory
         mode: 0755
-    - copy:
+    - name: "Webseite kopieren"
+      copy:
         src: files/index.html
         dest: {{ docroot }}
         owner: www-data
